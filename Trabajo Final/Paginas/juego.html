@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Final</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/index.html">
+            <svg width="200" height="80"> 
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon points="55 45, 95 45, 115 62, 30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48, 92 48, 104 58, 43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+        </a>
+
+        <ul>
+            <li><a class="nav_link" href="/Paginas/historia.html">HISTORIA</a></li>
+            <li><a class="nav_link" href="/Paginas/juego.html">JUGUEMOS</a></li>
+        </ul>
+
+    </nav>
+
+    <header>
+        <h1 class="titulo">JUGUEMOS UN POCO</h1>
+    </header>
+
+    <main>
+
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+
+        <section class="rompecabezas">
+
+            <div class="cajas">
+                <div id="cajaImg1" class="caja"> <p>Arrastre y suelte la imágene aquí</p> </div>
+                <div id="cajaImg2" class="caja"> <p>Arrastre y suelte la imágene aquí</p> </div>
+                <div id="cajaImg3" class="caja"> <p>Arrastre y suelte la imágene aquí</p> </div>
+            </div>
+
+            <div id="cajaImgs">
+                <img id="img1" src="/Info-Trabajo-Final/assets/imagenes/rompe2.png" alt="imàgen del rompecabezas">
+                <img id="img2" src="/Info-Trabajo-Final/assets/imagenes/Rompe1.png" alt="imàgen del rompecabezas">
+                <img id="img3" src="/Info-Trabajo-Final/assets/imagenes/Rompe3.png" alt="imàgen del rompecabezas">
+            </div>
+
+        </section>
+
+        <button class="boton_reinicio" onclick="reinicio()">Reiniciar</button>
+
+    </main>
+
+    <footer>
+        <div class="footer_logo">
+            <img class="logo" src="/Info-Trabajo-Final/assets/imagenes/logo.png" alt="un logo">
+            <h3 class="titulo_footer">PROGRAMACION <br> E <br> HISTORIA</h3>
+        </div>
+        <div>
+            Sitio con fines educativos - Creado por M.Victoria Lopez
+        </div>
+    </footer>
+
+    <script src="/scriptGame.js"></script>
+</body>
+</html>
